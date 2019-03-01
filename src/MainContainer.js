@@ -38,11 +38,11 @@ const mockTab = [
 class MainContainer extends Component {
     render() {
         return (
-            <>
+            <div className='weatherContainer'>
                 {mockTab.map((mockedObject, i) => {
                     return <DailyWeatherCard day={mockedObject.day} weatherType={mockedObject.weatherType} tempHigh={mockedObject.tempHigh} tempLow={mockedObject.tempLow} key={i}></DailyWeatherCard>
                 })}
-            </>
+            </div>
         );
     }
 }
